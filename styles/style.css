@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary-color:#000000;
+    --secondary-color:#F7E2D6;
+    --tertiary-color:#9DD6DF;
+    --shadow-color: #BADFED;
+    --hover-color: #272727;
+    
+    --primary-font: 'Krona One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.personal__header {
+    padding: 2% 0 0 15%;
+}
+
+.menu__header {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__links {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.presentation {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentation__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentation__content__title {
+    font-size: 2.25rem;
+    font-family: var(--primary-font);
+}
+
+.featured-title {
+    color: var(--tertiary-color);
+}
+
+.presentation__content__text {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+}
+
+.presentation__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentation__links__subititle {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.presentation__links__navigation {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    border: 2px solid var(--tertiary-color);
+    box-shadow: 5px 4px 15px var(--shadow-color);
+    transition: all 0.5s;
+}
+
+.presentation__links__navigation:hover {
+    background-color: var(--hover-color);
+    padding: 4%;
+}
+
+.image__presentation {
+    width: 50%;
+}
+
+.personal__footer {
+    padding: 24px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentation__content {
+        width: auto;
+    }
+
+    .personal__header {
+        padding: 10%;
+    }
+
+    .menu__header {
+        justify-content: center;
+    }
+
+}
